@@ -1,12 +1,12 @@
-# go-ecs-deploy [![Build Status](https://travis-ci.org/vend/go-ecs-deploy.svg)](https://travis-ci.org/vend/go-ecs-deploy)
-deploy a hosted docker container to an existing ecs cluster
+# go-ecs-deploy
+Deploy a hosted docker container to an existing ecs cluster
 
 Allows deployment of ECS microservices straight from the command line!
 
 ## Installation
 
 ```
-go get github.com/vend/go-ecs-deploy
+go get github.com/visfleet/go-ecs-deploy
 ```
 
 ## Requirements
@@ -48,20 +48,16 @@ Usage of ./go-ecs-deploy:
 
 ```
 AWS_PROFILE=production go-ecs-deploy \
-  -c vend-production \
-  -a authome \
+  -c production \
+  -a webapp \
   -i quay.io/username/reponame \
   -e production \
-  -s 5304a1b \
+  -s 123456ab \
   -r us-west-2
 ```
 
 ## Development
 
-To update dependencies, open up `glide.yaml` and update the `version:` field for
-the relevant package(s).
-
-Then run `glide up`
+To update dependencies, open `go.mod` and update package versions. Then run `go mod`.
 
 To build `go-ecs-deploy` locally simply run `make build`.
-

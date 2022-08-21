@@ -25,3 +25,6 @@ _testmain.go
 
 # Bins
 go-ecs-deploy
+
+# IntelliJ
+.idea
