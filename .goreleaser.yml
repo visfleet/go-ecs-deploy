@@ -1,0 +1,14 @@
+release:
+  github:
+    owner: visfleet
+    name: go-ecs-deploy
+  prerelease: auto
+
+builds:
+  - id: go-ecs-deploy
+    goos:
+      - linux
+      - darwin
+    goarch:
+      - amd64
+      - arm64

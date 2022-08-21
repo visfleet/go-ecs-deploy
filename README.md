@@ -6,7 +6,8 @@ Allows deployment of ECS microservices straight from the command line!
 ## Installation
 
 ```
-go get github.com/visfleet/go-ecs-deploy
+curl -sLo package.tgz https://github.com/visfleet/go-ecs-deploy/releases/download/v1.0.0/go-ecs-deploy_1.0.0_linux_amd64.tar.gz
+tar xvzf package.tgz
 ```
 
 ## Requirements
@@ -18,7 +19,7 @@ You need:
 
 ## Usage
 
-The full list of options is:
+The full list of options is available through `./go-ecs-deploy --help`.
 
 ```
 Usage of ./go-ecs-deploy:
