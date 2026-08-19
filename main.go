@@ -206,6 +206,7 @@ func main() {
 		RequiresCompatibilities: taskDesc.TaskDefinition.RequiresCompatibilities,
 		ExecutionRoleArn:        taskDesc.TaskDefinition.ExecutionRoleArn,
 		PlacementConstraints:    taskDesc.TaskDefinition.PlacementConstraints,
+		RuntimePlatform:         taskDesc.TaskDefinition.RuntimePlatform,
 	}
 
 	if *debug {
